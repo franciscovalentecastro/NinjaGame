@@ -27,11 +27,9 @@
     <background>background\temple_test</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\script0.gml</script>
-  </scripts>
+  <scripts name="scripts"/>
   <objects name="objects">
-    <object>objects\object0</object>
+    <object>objects\ninja</object>
     <object>objects\wall</object>
   </objects>
   <rooms name="rooms">
