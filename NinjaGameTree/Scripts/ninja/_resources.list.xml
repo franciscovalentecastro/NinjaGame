@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="ninjaCreate" type="RESOURCE"/>
+  <resource name="keyboardInput" type="RESOURCE"/>
+  <resource name="gravityStep" type="RESOURCE"/>
+  <resource name="collsionBlock" type="RESOURCE"/>
+</resources>
