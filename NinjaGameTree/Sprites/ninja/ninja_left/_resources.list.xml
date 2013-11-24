@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="ninja_stand_left" type="RESOURCE"/>
-  <resource name="ninja_run_left" type="RESOURCE"/>
-  <resource name="ninja_fall_left" type="RESOURCE"/>
-  <resource name="ninja_jump_left" type="RESOURCE"/>
-  <resource name="ninja_wall_left" type="RESOURCE"/>
+  <resource name="spr_ninja_stand_left" type="RESOURCE"/>
+  <resource name="spr_ninja_run_left" type="RESOURCE"/>
+  <resource name="spr_ninja_fall_left" type="RESOURCE"/>
+  <resource name="spr_ninja_jump_left" type="RESOURCE"/>
+  <resource name="spr_ninja_wall_left" type="RESOURCE"/>
 </resources>

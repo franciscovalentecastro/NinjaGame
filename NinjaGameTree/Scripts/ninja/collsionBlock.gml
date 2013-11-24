@@ -8,10 +8,10 @@
             
             switch( facing ){
                 case "left":
-                    sprite_index = ninja_stand_left;
+                    sprite_index = spr_ninja_stand_left;
                     break;
                 case "right":
-                    sprite_index = ninja_stand_right;
+                    sprite_index = spr_ninja_stand_right;
                     break;
             }
             
@@ -38,10 +38,10 @@
         case "run" :
              switch( facing ){
                 case "left":
-                    sprite_index = ninja_stand_left;
+                    sprite_index = spr_ninja_stand_left;
                     break;
                 case "right":
-                    sprite_index = ninja_stand_right;
+                    sprite_index = spr_ninja_stand_right;
                     break;
             }
         

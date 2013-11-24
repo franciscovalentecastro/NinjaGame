@@ -9,14 +9,14 @@
     if( vspeed > 0 ){
     
         if( leftKey ){
-            sprite_index = ninja_fall_left;
+            sprite_index = spr_ninja_fall_left;
             hspeed = -2;
         
             facing = "left";    
         }
 
         if( rightKey ){
-            sprite_index = ninja_fall_right;
+            sprite_index = spr_ninja_fall_right;
             hspeed = 2;
             
             facing = "right";
@@ -41,7 +41,7 @@
             
             if( !rightKey && !leftKey && facing == "right" ){
 
-                sprite_index = ninja_stand_right;
+                sprite_index = spr_ninja_stand_right;
         
                 image_index = 0 ;
                 image_speed = 1;
@@ -50,7 +50,7 @@
             }
         
             if( !leftKey && !rightKey && facing == "left" ){
-                sprite_index = ninja_stand_left;
+                sprite_index = spr_ninja_stand_left;
         
                 image_index = 0 ;
                 image_speed = 1;
@@ -59,7 +59,7 @@
             }
         
             if( ( mode == "stand" || ( mode == "run" && facing == "right" ) ) && leftKey ){
-                sprite_index = ninja_run_left;
+                sprite_index = spr_ninja_run_left;
                         
                 image_index = 0 ;
                 image_speed = .5;
@@ -71,7 +71,7 @@
             }
         
             if( ( mode == "stand" || ( mode == "run" && facing == "left" ) ) && rightKey ){
-                sprite_index = ninja_run_right;
+                sprite_index = spr_ninja_run_right;
                 
                 image_index = 0 ;
                 image_speed = .5;
@@ -86,11 +86,11 @@
                 
                 switch( facing ){
                     case "right": 
-                        sprite_index = ninja_jump_right;    
+                        sprite_index = spr_ninja_jump_right;    
                         break;
                 
                     case "left":
-                        sprite_index = ninja_jump_left;    
+                        sprite_index = spr_ninja_jump_left;    
                         break;
                 }
 

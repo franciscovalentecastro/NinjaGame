@@ -16,7 +16,7 @@
     <backgroundDef>
       <visibleOnRoomStart>true</visibleOnRoomStart>
       <isForeground>false</isForeground>
-      <backgroundImage>temple_god</backgroundImage>
+      <backgroundImage>bg_temple_god</backgroundImage>
       <offset x="0" y="0"/>
       <speed x="0" y="0"/>
       <tileHorizontally>true</tileHorizontally>
@@ -100,7 +100,7 @@
       <visibleOnRoomStart>true</visibleOnRoomStart>
       <viewInRoom height="160" width="320" x="0" y="0"/>
       <portOnScreen height="160" width="320" x="0" y="0"/>
-      <objectFollowing hBorder="64" hSpeed="4" vBorder="64" vSpeed="4">ninja</objectFollowing>
+      <objectFollowing hBorder="64" hSpeed="4" vBorder="64" vSpeed="4">obj_ninja</objectFollowing>
     </view>
     <view>
       <visibleOnRoomStart>false</visibleOnRoomStart>
@@ -147,181 +147,181 @@
   </views>
   <instances>
     <instance>
-      <object>ninja</object>
+      <object>obj_ninja</object>
       <position x="256" y="192"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="224" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="256" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="288" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="320" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="352" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="384" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="416" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="480" y="288"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="416" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="448" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="480" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="512" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="544" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="576" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="608" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="384" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="352" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="320" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="320" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="288" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="256" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="224" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>smallBlock_left</object>
+      <object>obj_smallBlock_left</object>
       <position x="192" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>smallBlock_left</object>
+      <object>obj_smallBlock_left</object>
       <position x="160" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>smallBlock_left</object>
+      <object>obj_smallBlock_left</object>
       <position x="128" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="160" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>squareBlock</object>
+      <object>obj_squareBlock</object>
       <position x="192" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>smallBlock_right</object>
+      <object>obj_smallBlock_right</object>
       <position x="448" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>smallBlock_right</object>
+      <object>obj_smallBlock_right</object>
       <position x="480" y="416"/>
       <creationCode/>
       <locked>false</locked>

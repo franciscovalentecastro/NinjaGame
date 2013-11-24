@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="squareBlock" type="RESOURCE"/>
-  <resource name="stairBlock_left" type="RESOURCE"/>
-  <resource name="smallBlock_left" type="RESOURCE"/>
-  <resource name="smallBlock_right" type="RESOURCE"/>
-  <resource name="stairBlock_right" type="RESOURCE"/>
+  <resource name="obj_squareBlock" type="RESOURCE"/>
+  <resource name="obj_stairBlock_left" type="RESOURCE"/>
+  <resource name="obj_smallBlock_left" type="RESOURCE"/>
+  <resource name="obj_smallBlock_right" type="RESOURCE"/>
+  <resource name="obj_stairBlock_right" type="RESOURCE"/>
 </resources>
