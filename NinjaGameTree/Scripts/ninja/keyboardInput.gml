@@ -39,7 +39,7 @@
                 speed = 0;
             }
             
-            if( !rightKey && !leftKey && facing == "right" ){
+            if( !rightKey && !leftKey && mode == "run" && facing == "right" ){
 
                 sprite_index = spr_ninja_stand_right;
         
@@ -49,7 +49,7 @@
                 mode = "stand";                
             }
         
-            if( !leftKey && !rightKey && facing == "left" ){
+            if( !leftKey && !rightKey && mode == "run" && facing == "left" ){
                 sprite_index = spr_ninja_stand_left;
         
                 image_index = 0 ;
@@ -83,23 +83,7 @@
             }
             
             if( ( mode == "stand" || mode == "run" ) && upKey  ){            
-                
-                switch( facing ){
-                    case "right": 
-                        sprite_index = spr_ninja_jump_right;    
-                        break;
-                
-                    case "left":
-                        sprite_index = spr_ninja_jump_left;    
-                        break;
-                }
-
-                image_index = 0;
-                image_speed = 1;   
-                                                  
-                vspeed = -6;
-                
-                mode = "jump";
+				script_execute( ninjaActionStep , "jump" );
             }
     }    
 
