@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="collisionSide" type="RESOURCE"/>
+  <resource name="collisionType" type="RESOURCE"/>
+  <resource name="calculateBoundBox" type="RESOURCE"/>
+  <resource name="keyboardInput" type="RESOURCE"/>
 </resources>
