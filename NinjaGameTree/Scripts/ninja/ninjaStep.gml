@@ -4,7 +4,7 @@
         gravity = .5;
 	}
 	
-	if( place_empty( x , y+1 ) && vspeed >= 0 ){
+	if( place_empty( x , y+1 ) && vspeed > 0 ){
 		
 		if( facing == "left" ){  obj_ninja.sprite_index = spr_ninja_fall_left; }
 		if( facing == "right" ){ obj_ninja.sprite_index = spr_ninja_fall_right; }
@@ -14,6 +14,4 @@
 		
 		mode = "fall";
 	} 
-
-	show_debug_message( "Mode : " + mode );
 }

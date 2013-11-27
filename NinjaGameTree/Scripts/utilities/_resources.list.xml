@@ -4,4 +4,5 @@
   <resource name="collisionType" type="RESOURCE"/>
   <resource name="calculateBoundBox" type="RESOURCE"/>
   <resource name="keyboardInput" type="RESOURCE"/>
+  <resource name="drawEvent" type="RESOURCE"/>
 </resources>

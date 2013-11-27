@@ -6,6 +6,7 @@
     rightKey = keyboard_check( vk_right );
     upKey = keyboard_check( vk_up );
 
+
 	if( !leftPressed && leftKey ){ script_execute( ninjaFunction ,"move" , "left" ); }
 	
 	if( !rightPressed && rightKey ){ script_execute( ninjaFunction ,"move" , "right" ); }

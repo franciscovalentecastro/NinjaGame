@@ -3,5 +3,5 @@
   <resource name="ninjaCreate" type="RESOURCE"/>
   <resource name="ninjaStep" type="RESOURCE"/>
   <resource name="ninjaFunction" type="RESOURCE"/>
-  <resource name="ninjaCollisionBlock" type="RESOURCE"/>
+  <resource name="ninjaCollisionWithBlock" type="RESOURCE"/>
 </resources>

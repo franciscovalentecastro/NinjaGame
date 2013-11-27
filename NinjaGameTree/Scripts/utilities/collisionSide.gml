@@ -21,4 +21,6 @@
 		if(  abs( ( ID_1 ).bbox_y0 - ( ID_2 ).bbox_y1  ) <=3 ){
 			return "top";
 		}
+		
+		return "noSide";
 }

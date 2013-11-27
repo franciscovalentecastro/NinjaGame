@@ -9,8 +9,44 @@
         case "fall":        
 		
 				switch( script_execute( collisionType , self.id , other.id  )  ){
+						case "ceil":
+						
+								vspeed = 0;
+								
+								direction = 90;
+								move_contact_solid( direction , 12 );
+								
+						break;
+						
+						case "wall":
+								if( hspeed > 0 ){
+									direction = 0
+								}
+								if( hspeed < 0 ){
+									direction =  180;
+								}
+								
+								hspeed = 0;
+								move_contact_solid( direction , 12 );
+						break;
+				
 						case "wallClimb":
-							
+								hspeed = 0;
+								
+								switch( facing ){
+											case "left":
+												sprite_index = spr_ninja_wall_left;
+												break;
+											case "right":
+												sprite_index = spr_ninja_wall_right;
+												break;
+								}
+								
+								direction = radtodeg( arctan2( -vspeed , hspeed ) );
+								move_contact_solid( direction , 12 );
+								
+								mode = "wallClimb";
+								
 						break;
 						
 						case "floor": // Floor Collision --------------------------------------------------------------------------------------------------------------------------------------//
@@ -45,36 +81,35 @@
 										mode = "stand";
 								}
 								
-								direction = radtodeg( arctan2( -vspeed , hspeed ) );
+								direction = 270;
 								move_contact_solid( direction , 12 );
-								
+							
 								gravity = 0;
 								vspeed = 0;
 										
 						break; //------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+				
+						default : 
+						
+							speed =0 ;
+							
+							switch( facing ){
+											case "left":
+												sprite_index = spr_ninja_stand_left;
+												break;
+											case "right":
+												sprite_index = spr_ninja_stand_right;
+												break;
+							}
+										
+							image_index = 0;
+							image_speed = 0;
+									
+							
+							direction = radtodeg( arctan2( -vspeed , hspeed ) );
+							move_contact_solid( direction , 12 );
 				}
 				
-			
-			// ----------------------------------------- Resolve collision while falling with walls and floor ------------------------------------------------------------ //
-            
-			switch( script_execute( collisionSide, self.id , other.id )  ){
-				
-				case "left":
-					hspeed = 0;
-					break;
-					
-				case "right":
-					hspeed = 0;
-					break;
-				
-				case "top":
-					vspeed = 0;
-					break;
-			}
-			
-			// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-        
-		
 		break;
     
         case "run" :
