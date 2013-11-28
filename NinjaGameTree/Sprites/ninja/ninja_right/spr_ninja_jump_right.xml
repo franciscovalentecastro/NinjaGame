@@ -2,9 +2,14 @@
 <sprite>
   <origin x="0" y="0"/>
   <mask>
-    <separate>true</separate>
+    <separate>false</separate>
     <shape>RECTANGLE</shape>
-    <bounds alphaTolerance="0" mode="AUTO"/>
+    <bounds alphaTolerance="0" mode="MANUAL">
+      <left>6</left>
+      <right>25</right>
+      <top>0</top>
+      <bottom>31</bottom>
+    </bounds>
   </mask>
   <preload>true</preload>
   <smoothEdges>false</smoothEdges>

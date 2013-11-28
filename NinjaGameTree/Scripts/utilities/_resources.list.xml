@@ -2,7 +2,7 @@
 <resources>
   <resource name="collisionSide" type="RESOURCE"/>
   <resource name="collisionType" type="RESOURCE"/>
-  <resource name="calculateBoundBox" type="RESOURCE"/>
   <resource name="keyboardInput" type="RESOURCE"/>
   <resource name="drawEvent" type="RESOURCE"/>
+  <resource name="solveCollisionWithSolid" type="RESOURCE"/>
 </resources>

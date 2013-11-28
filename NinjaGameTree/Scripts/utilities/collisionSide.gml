@@ -4,21 +4,20 @@
 		ID_1 = argument0;
 		ID_2 = argument1;
 		
-		script_execute( calculateBoundBox , ID_1 );
-		script_execute( calculateBoundBox , ID_2 );
-			
+		script_execute( solveCollisionWithSolid , ID_1 );
+		
 		// Find side of collision 
 			
-		if(  abs( ( ID_1 ).bbox_y1 - ( ID_2 ).bbox_y0  ) <=3 ){
+		if(  abs( ( ID_1 ).bbox_bottom - ( ID_2 ).bbox_top  ) <= 2 ){
 			return "bottom";
 		}
-		if(  abs( ( ID_1 ).bbox_x1 - ( ID_2 ).bbox_x0  ) <=3 ){
+		if(  abs( ( ID_1 ).bbox_right - ( ID_2 ).bbox_left  ) <= 2 ){
 			return "right";
 		}
-		if(  abs( ( ID_1 ).bbox_x0 - ( ID_2 ).bbox_x1  ) <=3 ){
+		if(  abs( ( ID_1 ).bbox_left - ( ID_2 ).bbox_right  ) <= 2 ){
 			return "left";
 		}
-		if(  abs( ( ID_1 ).bbox_y0 - ( ID_2 ).bbox_y1  ) <=3 ){
+		if(  abs( ( ID_1 ).bbox_bottom - ( ID_2 ).bbox_top  ) <= 2 ){
 			return "top";
 		}
 		
