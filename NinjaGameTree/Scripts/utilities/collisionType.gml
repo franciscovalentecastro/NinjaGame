@@ -23,4 +23,6 @@
 			return "floor";
 	}
 	
+	show_debug_message( "noType" );
+	return "noType";
 }
