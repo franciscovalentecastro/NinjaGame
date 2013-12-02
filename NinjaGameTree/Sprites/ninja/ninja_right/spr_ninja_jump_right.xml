@@ -4,12 +4,7 @@
   <mask>
     <separate>false</separate>
     <shape>RECTANGLE</shape>
-    <bounds alphaTolerance="0" mode="MANUAL">
-      <left>6</left>
-      <right>25</right>
-      <top>0</top>
-      <bottom>31</bottom>
-    </bounds>
+    <bounds alphaTolerance="0" mode="AUTO"/>
   </mask>
   <preload>true</preload>
   <smoothEdges>false</smoothEdges>

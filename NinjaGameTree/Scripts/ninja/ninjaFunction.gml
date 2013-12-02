@@ -9,24 +9,9 @@
 					case "jump": // Jump --------------------------------------------------------------------------------------------------------------------------------------//
 						
 						if( obj_ninja.mode != "jump" && obj_ninja.mode != "fall" ){
-							
-							switch( obj_ninja.facing ){
-									case "right": 
-										obj_ninja.sprite_index = spr_ninja_jump_right;    
-										break;
-								
-									case "left":
-										obj_ninja.sprite_index = spr_ninja_jump_left;    
-										break;
-								}
-
-								obj_ninja.image_index = 0;
-								obj_ninja.image_speed = 1;   
-																  
-								obj_ninja.vspeed = -6;
-							
-								obj_ninja.mode = "jump";
-								
+										script_execute( ninjaSetSprite , obj_ninja.id , "jump" , obj_ninja.facing );
+										obj_ninja.vspeed = -7;
+										obj_ninja.mode = "jump";
 						}
 						
 					break;  //-------------------------------------------------------------------------------------------------------------------------------------------------------//
@@ -39,20 +24,17 @@
 									
 										switch( directionOfMovement ){
 											case "left" :
-												obj_ninja.sprite_index = spr_ninja_run_left;
-												obj_ninja.hspeed = - 4;
 												obj_ninja.facing = "left";
+												script_execute( ninjaSetSprite , obj_ninja.id , "run" , obj_ninja.facing );
+												obj_ninja.hspeed = - 4;
 											break;
 											
 											case "right" :
-												obj_ninja.sprite_index = spr_ninja_run_right;
-												obj_ninja.hspeed = 4;						    
 												obj_ninja.facing = "right";
+												script_execute( ninjaSetSprite , obj_ninja.id , "run" , obj_ninja.facing );
+												obj_ninja.hspeed = 4;						    
 											break;
 										}
-										
-										obj_ninja.image_index = 0 ;
-										obj_ninja.image_speed = .5;
 										
 										obj_ninja.mode = "run";   
 												
@@ -61,19 +43,16 @@
 								case "run" :      // Runnning---------------------------------------//
 									
 									if( obj_ninja.facing == "left" && directionOfMovement == "right" ){
-											obj_ninja.sprite_index = spr_ninja_run_right;		
-											obj_ninja.hspeed = 4;     
 											obj_ninja.facing = "right";
+											script_execute( ninjaSetSprite , obj_ninja.id , "run" , obj_ninja.facing );	
+											obj_ninja.hspeed = 4;     
 									}
 									
 									if( obj_ninja.facing == "right" && directionOfMovement == "left" ){
-											obj_ninja.sprite_index = spr_ninja_run_left;
-											obj_ninja.hspeed = -4;      
 											obj_ninja.facing = "left";
+											script_execute( ninjaSetSprite , obj_ninja.id , "run" , obj_ninja.facing );	
+											obj_ninja.hspeed = -4;      
 									}
-									
-									obj_ninja.image_index = 0 ;
-									obj_ninja.image_speed = .5;	
 									
 									obj_ninja.mode = "run";   
 									
@@ -82,19 +61,16 @@
 								case "fall" : // Falling -----------------------------------------------//
     
 									if( directionOfMovement == "left" ){
-										obj_ninja.sprite_index = spr_ninja_fall_left;
-										obj_ninja.hspeed = -2;
 										obj_ninja.facing = "left";    
+										script_execute( ninjaSetSprite , obj_ninja.id , "fall" , obj_ninja.facing );
+										obj_ninja.hspeed = -2;
 									}
 
 									if(directionOfMovement == "right" ){
-										obj_ninja.sprite_index = spr_ninja_fall_right;
-										obj_ninja.hspeed = 2;
 										obj_ninja.facing = "right";
+										script_execute( ninjaSetSprite , obj_ninja.id , "fall" , obj_ninja.facing );
+										obj_ninja.hspeed = 2;
 									} 
-									
-									obj_ninja.image_index = 0 ;
-									obj_ninja.image_speed = 0;
 									
 								break; //------------------------------------------------------------------//
 								
@@ -112,21 +88,8 @@
 					case "stand": // Standing ----------------------------------------------------------------------------------------------------------------------------------//
 						if( obj_ninja.mode != "jump" && obj_ninja.mode != "fall" ){
 							
-								switch( obj_ninja.facing ){
-									case "left":
-										obj_ninja.sprite_index = spr_ninja_stand_left;
-									break;
-									
-									case "right":
-										obj_ninja.sprite_index = spr_ninja_stand_right;
-									break;
-								} 
-								
-								obj_ninja.image_index = 0 ;
-								obj_ninja.image_speed = 0;
-								
+								script_execute( ninjaSetSprite , obj_ninja.id , "stand" , obj_ninja.facing );
 								obj_ninja.hspeed = 0;
-								
 								obj_ninja.mode = "stand";   
 								
 						}

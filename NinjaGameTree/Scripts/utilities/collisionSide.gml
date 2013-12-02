@@ -8,18 +8,18 @@
 		
 		// Find side of collision 
 			
-		if(  abs( ( ID_1 ).bbox_bottom   - ( ID_2 ).bbox_top  ) <= 1 ){
+		if(  abs( ( ID_1 ).bbox_bottom   - ( ID_2 ).bbox_top  ) <= 2 ){
 			return "bottom";
 		}
 		
-		if(  abs( ( ID_1 ).bbox_bottom - ( ID_2 ).bbox_top  ) <= 1 ){
+		if(  abs( ( ID_1 ).bbox_top - ( ID_2 ).bbox_bottom  ) <= 2 ){
 			return "top";
 		}
 		
-		if(  abs( ( ID_1 ).bbox_right - ( ID_2 ).bbox_left  ) <= 1 ){
+		if(  abs( ( ID_1 ).bbox_right - ( ID_2 ).bbox_left  ) <= 2 ){
 			return "right";
 		}
-		if(  abs( ( ID_1 ).bbox_left - ( ID_2 ).bbox_right  ) <= 1 ){
+		if(  abs( ( ID_1 ).bbox_left - ( ID_2 ).bbox_right  ) <= 2 ){
 			return "left";
 		}
 		

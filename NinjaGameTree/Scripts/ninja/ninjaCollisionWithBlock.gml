@@ -1,11 +1,5 @@
 {   
-	var otherID;
-	otherID = instance_place(  x + hspeed , y + vspeed , obj_squareBlock  )
-	
-	// Check Collision
-	if( otherID == noone ){
-		exit;
-	}
+	show_debug_message( "Col" );
 	
 	// Update movement variables value
 	direction = point_direction( x , y , x+hspeed , y+vspeed );
@@ -14,31 +8,25 @@
     switch( mode ){	
 	
         case "jump":
+			show_debug_message( "Collision on Jump");
             mode = "fall"
             
         case "fall":        
 				
-				switch( script_execute( collisionType , self.id , otherID  )  ){
+				switch( script_execute( collisionType , self.id , other.id  )  ){
 						
 						case "ceil":
 								vspeed = 0;
 						break;
 						
 						case "wall":
-								script_execute( solveCollision , self.id );
 								hspeed = 0;
-						
 						break;
 				
 						case "wallClimb":					
-								switch( facing ){
-											case "left":
-												sprite_index = spr_ninja_wall_left;
-												break;
-											case "right":
-												sprite_index = spr_ninja_wall_right;
-												break;
-								}
+						
+								script_execute( ninjaSetSprite , self.id , "wallClimb" , self.facing );
+								
 								script_execute( solveCollision , self.id );
 								
 								hspeed = 0;
@@ -47,91 +35,40 @@
 						break;
 						
 						case "floor": // Floor Collision --------------------------------------------------------------------------------------------------------------------------------------//
-						
+								
 							    if( hspeed != 0 ){
-										switch( facing ){
-											case "left":
-												sprite_index = spr_ninja_run_left;
-												break;
-											case "right":
-												sprite_index = spr_ninja_run_right;
-												break;
-										}
-									
-										image_index = 0;
-										image_speed = .5;
-										
+										script_execute( ninjaSetSprite , self.id , "run" , self.facing );
 										mode = "run";					
 								}else{
-								
-										switch( facing ){
-											case "left":
-												sprite_index = spr_ninja_stand_left;
-												break;
-											case "right":
-												sprite_index = spr_ninja_stand_right;
-												break;
-										}
-										
-										image_index = 0;
-										image_speed = 0;
-										
+										script_execute( ninjaSetSprite , self.id , "stand" , self.facing );
 										mode = "stand";
-										
 								}
 								
-								script_execute( solveCollision , self.id );
+								script_execute( solveCollision , self.id , "floor" );
 							
 								gravity = 0;
 								vspeed = 0;
+								
 								
 						break; //------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 				
 						default : 
 							script_execute( solveCollision , self.id );
-							
-							switch( facing ){
-											case "left":
-												sprite_index = spr_ninja_stand_left;
-												break;
-											case "right":
-												sprite_index = spr_ninja_stand_right;
-												break;
-							}
-										
-							image_index = 0;
-							image_speed = 0;
-							
-							script_execute( solveCollision , self.id );	
-							
-							speed =0 ;
 						break;
 				}
 				
 		break;
     
         case "run" :
-		
-			script_execute( solveCollision , self.id );
-		
-             switch( facing ){
-                case "left":
-                    sprite_index = spr_ninja_stand_left;
-                    break;
-                case "right":
-                    sprite_index = spr_ninja_stand_right;
-                    break;
-            }
-			
-			script_execute( solveCollision , self.id );
-		
+			script_execute( solveCollision , self.id , "floor" );
+            script_execute( ninjaSetSprite , self.id , "stand" , self.facing );
 			hspeed = 0; 
             mode = "stand";
             
         break;
     
         case "stand" :
-			script_execute( solveCollision , self.id );
+			script_execute( solveCollision , self.id , "floor" );
 			hspeed = 0;
         break;    
     }

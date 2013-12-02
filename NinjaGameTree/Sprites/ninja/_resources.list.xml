@@ -2,4 +2,5 @@
 <resources>
   <resource name="ninja_right" type="GROUP"/>
   <resource name="ninja_left" type="GROUP"/>
+  <resource name="ninja_mask" type="GROUP"/>
 </resources>

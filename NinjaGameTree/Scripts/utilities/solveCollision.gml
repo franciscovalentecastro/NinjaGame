@@ -1,23 +1,42 @@
 {
 	// Solve Collision with solid
-	var ID;
-	ID = argument0;
+	var ID,typeCollision;
+	ID = argument[0];
+	if( argument_count > 1 ){
+		typeCollision = argument[ 1 ];
+	}else{ typeCollision = "none"; }
 	
 	with( ( ID ) ){
-		
-			direction = point_direction(  x , y , x + hspeed , y + vspeed);
 			
-			if( place_free( x , y ) ){
-			
-				show_debug_message( "Move Contact" );
-			
-				move_contact_solid( direction , speed );
-			}else{
-				show_debug_message( "Move Outside" );
-			
-				move_outside_solid( ( direction + 180 ) mod 360 , speed );
-			
+			switch( typeCollision ){
+					case "none": 
+							direction = point_direction(  x , y , x + hspeed , y + vspeed);
+							
+							if( place_free( x , y ) ){
+								move_contact_solid( direction , speed );
+							}else{
+								move_outside_solid( ( direction +  180 ) mod 360 , speed );
+								move_outside_solid( ( direction +  180 ) mod 360 , speed );
+							}
+							
+							show_debug_message( "Solve None" );
+					break;
+					
+					case "floor" :
+							
+							if( place_free( x , y ) ){
+								move_contact_solid( direction, speed );
+								show_debug_message( "Solve Floor cont" );
+							}else{
+								move_outside_solid( 90 , speed );
+								move_outside_solid( 90 , speed );
+								show_debug_message( "Solve Floor out" );
+							}
+							
+							show_debug_message( "Solve Floor" );
+					break;
+					
 			}
-		}
+	}
 
 }

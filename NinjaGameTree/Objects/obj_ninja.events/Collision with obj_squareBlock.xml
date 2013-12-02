@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<event category="DRAW" id="0">
+<event category="COLLISION" with="obj_squareBlock">
   <actions>
     <action id="601" library="1">
       <!--action name: Execute_Script-->
@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="SCRIPT">drawEvent</argument>
+        <argument kind="SCRIPT">ninjaCollisionWithBlock</argument>
         <argument kind="EXPRESSION">0</argument>
         <argument kind="EXPRESSION">0</argument>
         <argument kind="EXPRESSION">0</argument>

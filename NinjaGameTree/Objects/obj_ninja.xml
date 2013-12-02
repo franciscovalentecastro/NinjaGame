@@ -6,5 +6,5 @@
   <depth>0</depth>
   <persistent>false</persistent>
   <parent/>
-  <mask/>
+  <mask>spr_ninja_stand_mask</mask>
 </object>
