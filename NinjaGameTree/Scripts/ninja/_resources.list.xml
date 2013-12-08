@@ -2,6 +2,7 @@
 <resources>
   <resource name="ninjaCreate" type="RESOURCE"/>
   <resource name="ninjaStep" type="RESOURCE"/>
+  <resource name="ninjaDraw" type="RESOURCE"/>
   <resource name="ninjaFunction" type="RESOURCE"/>
   <resource name="ninjaCollisionWithBlock" type="RESOURCE"/>
   <resource name="ninjaSetSprite" type="RESOURCE"/>
