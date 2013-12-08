@@ -12,30 +12,30 @@
            case "stand":
                switch (spriteFacing) {
                    case "left":
-                      sprite_index = spr_ninja_stand_left;
+                      sprite_index = spr_ninja2_stand_left;
                   break;
                    case "right":
-                      sprite_index = spr_ninja_stand_right;
+                      sprite_index = spr_ninja2_stand_right;
                   break;
                }
      
-               mask_index = spr_ninja_stand_mask;
+               mask_index = spr_ninja2_stand_mask;
              
                image_index = 0;
-               image_speed = 0;
+               image_speed = 1;
            break;
  
            case "run":
                switch (spriteFacing) {
                    case "left":
-                      sprite_index = spr_ninja_run_left;
+                      sprite_index = spr_ninja2_run_left;
                   break;
                    case "right":
-                      sprite_index = spr_ninja_run_right;
+                      sprite_index = spr_ninja2_run_right;
                   break;
                }
  
-               mask_index = spr_ninja_stand_mask;
+               mask_index = spr_ninja2_stand_mask;
  
                image_index = 0;
                image_speed = .5;

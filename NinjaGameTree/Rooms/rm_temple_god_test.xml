@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <room>
   <caption/>
-  <size height="480" width="640"/>
+  <size height="480" width="1920"/>
   <grid>
     <isometric>false</isometric>
     <snap x="32" y="32"/>
@@ -9,14 +9,14 @@
   <speed>30</speed>
   <persistent>false</persistent>
   <creationCode/>
-  <backgroundColor>C0C0C0</backgroundColor>
+  <backgroundColor>80FFFF</backgroundColor>
   <drawBackgroundColor>false</drawBackgroundColor>
   <clearViewBackground>true</clearViewBackground>
   <backgrounds>
     <backgroundDef>
       <visibleOnRoomStart>true</visibleOnRoomStart>
       <isForeground>false</isForeground>
-      <backgroundImage>bg_temple_god</backgroundImage>
+      <backgroundImage>bg_city_night</backgroundImage>
       <offset x="0" y="0"/>
       <speed x="0" y="0"/>
       <tileHorizontally>true</tileHorizontally>
@@ -98,9 +98,9 @@
   <views>
     <view>
       <visibleOnRoomStart>true</visibleOnRoomStart>
-      <viewInRoom height="160" width="320" x="0" y="0"/>
-      <portOnScreen height="160" width="320" x="0" y="0"/>
-      <objectFollowing hBorder="64" hSpeed="10" vBorder="64" vSpeed="10">obj_ninja</objectFollowing>
+      <viewInRoom height="256" width="480" x="0" y="0"/>
+      <portOnScreen height="256" width="480" x="0" y="0"/>
+      <objectFollowing hBorder="96" hSpeed="10" vBorder="96" vSpeed="10">obj_ninja</objectFollowing>
     </view>
     <view>
       <visibleOnRoomStart>false</visibleOnRoomStart>
@@ -148,545 +148,152 @@
   <instances>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="224" y="224"/>
+      <position x="0" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="256" y="224"/>
+      <position x="32" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="288" y="224"/>
+      <position x="64" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="320" y="224"/>
+      <position x="96" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="352" y="224"/>
+      <position x="128" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="384" y="224"/>
+      <position x="0" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="416" y="224"/>
+      <position x="32" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="480" y="288"/>
+      <position x="64" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="416" y="384"/>
+      <position x="96" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>obj_squareBlock</object>
-      <position x="448" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="480" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="512" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="544" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="576" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="384" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="352" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="320" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="320" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="288" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="256" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="224" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="160" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="192" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="544" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="544" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="544" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="576" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="576" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="96" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="96" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="64" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="32" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="32" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="64" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="64" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="32" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="32" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="32" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="96" y="64"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="64" y="64"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="32" y="64"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="64"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="64" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="288" y="0"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="288" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="320" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="352" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="352" y="0"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="512" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="544" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="576" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_ninja</object>
-      <position x="224" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="224" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_smallBlock_bottom_right</object>
-      <position x="160" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_smallBlock_bottom_left</object>
-      <position x="448" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_smallBlock_bottom_left</object>
-      <position x="480" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_smallBlock_bottom_right</object>
-      <position x="192" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_smallBlock_bottom_right</object>
       <position x="128" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_squareBlock</object>
-      <position x="192" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="224" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="416" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="576" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="96"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="32" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="32" y="96"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="64" y="96"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="96" y="96"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="64" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="96" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="576" y="0"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="576" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="608" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="0" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="320" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_squareBlock</object>
-      <position x="320" y="160"/>
+      <object>obj_ninja</object>
+      <position x="64" y="352"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1184" y="32"/>
+      <roomPosition x="32" y="416"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1216" y="32"/>
+      <roomPosition x="64" y="416"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1184" y="96"/>
+      <roomPosition x="32" y="448"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1216" y="96"/>
+      <roomPosition x="64" y="448"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1280" y="32"/>
+      <roomPosition x="0" y="416"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1248" y="32"/>
+      <roomPosition x="96" y="416"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1280" y="32"/>
+      <roomPosition x="128" y="416"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1280" y="96"/>
+      <roomPosition x="0" y="448"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1248" y="96"/>
+      <roomPosition x="96" y="448"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_temple_god_tile</background>
+      <backgroundPosition x="1280" y="96"/>
+      <roomPosition x="128" y="448"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+  </tiles>
   <editorSettings remember="false"/>
 </room>

@@ -2,4 +2,5 @@
 <resources>
   <resource name="bg_temple_god_tile" type="RESOURCE"/>
   <resource name="bg_temple_god" type="RESOURCE"/>
+  <resource name="bg_city_night" type="RESOURCE"/>
 </resources>

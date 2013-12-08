@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <object id="0">
-  <sprite>spr_ninja_stand_right</sprite>
+  <sprite>spr_ninja2_stand_right</sprite>
   <solid>false</solid>
   <visible>true</visible>
   <depth>0</depth>
