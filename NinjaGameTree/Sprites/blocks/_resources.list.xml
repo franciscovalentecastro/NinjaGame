@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="spr_smallBlock_top_left" type="RESOURCE"/>
-  <resource name="spr_smallBlock_bottom_left" type="RESOURCE"/>
-  <resource name="spr_smallBlock_top_right" type="RESOURCE"/>
-  <resource name="spr_smallBlock_bottom_right" type="RESOURCE"/>
-  <resource name="spr_squareBlock" type="RESOURCE"/>
-</resources>

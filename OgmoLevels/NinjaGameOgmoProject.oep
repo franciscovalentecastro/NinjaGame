@@ -1,0 +1,36 @@
+<project>
+	<name>Ninja Game Ogmo Project</name>
+	
+	<settings>
+		<defaultWidth>640</defaultWidth>
+		<defaultHeight>480</defaultHeight>
+		<minWidth>320</minWidth>
+		<minHeight>240</minHeight>
+		<maxWidth>960</maxWidth>
+		<maxHeight>720</maxHeight>
+		<workingDirectory>../Assets</workingDirectory>
+	</settings>
+	
+	<tilesets>
+		<tileset name="rocks_1" image="TileSets/rocks_1.png" tileWidth="32" tileHeight="32" />
+		<tileset name="bricks_1" image="TileSets/bricks_1.png" tileWidth="32" tileHeight="32" />
+	</tilesets> 
+	
+	<objects>
+		<object name="ninja" image="Sprites/ninjaSprite.png" width="32" height="64" limit="1" />
+	</objects>
+	
+	<layers>
+		<tiles name="BackTileLayer" gridSize = "32" exportTileSize="true" multipleTilesets="false" />
+		
+		<grid  name="FloorsLayer" gridSize = "32" esportAsObjects = "true" />
+		
+		<tiles name="MiddleTileLayer" gridSize = "32" exportTileSize="true" multipleTilesets="false" />
+		
+		<objects name="ObjectsLayer" gridSize="16" />
+		
+		<tiles name="FrontTileLayer" gridSize = "32" exportTileSize="true" multipleTilesets="false" />
+		
+	</layers>
+	
+</project>

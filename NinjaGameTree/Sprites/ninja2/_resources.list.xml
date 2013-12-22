@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="ninja2_right" type="GROUP"/>
-  <resource name="ninja2_left" type="GROUP"/>
-  <resource name="ninja2_mask" type="GROUP"/>
-</resources>

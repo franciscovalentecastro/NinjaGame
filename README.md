@@ -1,4 +1,4 @@
 NinjaGame
 =========
 
-Just a ninja game prototype on GM.
+Now the game is in Unity using OgmoEditor as level editor.
